@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>balladofssue</title>
+    <link rel="stylesheet" href="musica.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="https://i.pinimg.com/1200x/52/c4/1e/52c41e0e5792baf1ee88654e90a0740c.jpg" width="100">
+    <h2>Advinha a música com apenas 5 segundos</h2>
+
+    <audio id="player" controls autoplay>
+        <source src="drop dead.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
+    <script>
+        const audio = document.getElementById("player");
+        audio.addEventListener("loadedmetadata", () => {
+        audio.currentTime = 15;
+    });
+
+    audio.addEventListener("timeupdate", () => {
+        if (audio.currentTime >= 20) {
+            audio.pause();
+        }
+    });
+    </script>
+        <div class="musica">
+            <div>
+            <input type="radio" name="musica1" id="m1">
+            <label for="m1">Drop dead - Olivia Rodrigo</label>
+            </div>
+
+            <div>
+            <input type="radio" name="musica1" id="m2">
+            <label for="m2">The Cure - Olivia Rodrigo</label>
+            </div>
+
+            <div>
+            <input type="radio" name="musica1" id="m3">
+            <label for="m3">Obsessed - Olivia Rodrigo</label>
+            </div>
+        </div>
+
+    <audio id="player1" controls autoplay>
+        <source src="oneLastTime.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
+    <script>
+        const audio1 = document.getElementById("player1");
+        audio1.addEventListener("loadedmetadata", () => {
+        audio1.currentTime = 60;
+    });
+
+    audio1.addEventListener("timeupdate", () => {
+        if (audio1.currentTime >= 65) {
+            audio1.pause();
+        }
+    });
+    </script>
+     <div class="musica">
+            <div>
+            <input type="radio" name="musica1" id="m1">
+            <label for="m1">Drop dead - Olivia Rodrigo</label>
+            </div>
+
+            <div>
+            <input type="radio" name="musica1" id="m2">
+            <label for="m2">The Cure - Olivia Rodrigo</label>
+            </div>
+
+            <div>
+            <input type="radio" name="musica1" id="m3">
+            <label for="m3">Obsessed - Olivia Rodrigo</label>
+            </div>
+        </div>
+
+    <audio id="player2" controls autoplay>
+        <source src="oneLastTime.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
+    <script>
+        const audio2 = document.getElementById("player2");
+        audio2.addEventListener("loadedmetadata", () => {
+        audio2.currentTime = 60;
+    });
+
+    audio2.addEventListener("timeupdate", () => {
+        if (audio2.currentTime >= 65) {
+            audio2.pause();
+        }
+    });
+    </script>
+     <div class="musica">
+            <div>
+            <input type="radio" name="musica1" id="m1">
+            <label for="m1">Drop dead - Olivia Rodrigo</label>
+            </div>
+
+            <div>
+            <input type="radio" name="musica1" id="m2">
+            <label for="m2">The Cure - Olivia Rodrigo</label>
+            </div>
+
+            <div>
+            <input type="radio" name="musica1" id="m3">
+            <label for="m3">Obsessed - Olivia Rodrigo</label>
+            </div>
+        </div>
+
+
+</body>
+</html>

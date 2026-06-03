@@ -1,34 +1,39 @@
 body{
-    background-color: rgb(199, 124, 186);
     gap: 20px;
-    font-family: Arial;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 .musica label{
-    background-color: #ffffff;
-    padding: 4px 15px;
-    border-radius: 15px;
+    background-color: #e963c1;
+    padding: 4x 15px;
+    border-radius: 30px;
     display: inline-block;
-    width: 200px;
+    width: 225px;
     text-align: center;
     border: 1px solid black;
     cursor: pointer;
     justify-content: space-between; 
+    font-family: Arial, Helvetica, sans-serif;
 }
 .musica input[type="radio"]{
     display: none;
 }
 .musica input:checked + label{
-    background-color: #961f86;
+    background-color: #891c7b;
     transform: scale(1.05);
 }
 audio{
 width: 300px;       /* Largura do player */
-    border: 2px solid #4CAF50;
     border-radius: 8px;
     background-color:  #ffffff; /* Pode não afetar todos os navegadores */
     padding: 4px;
-    text-align: center;
+
+    display: block;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    position: relative;
 }

@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>balladofssue</title>
+
+<link rel="stylesheet" href="musica.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<img class="banner"
+src="https://i.pinimg.com/1200x/52/c4/1e/52c41e0e5792baf1ee88654e90a0740c.jpg">
+
+<h1>Advinhe a música em apenas 5 segundos</h1>
+
+<div class="quiz">
+
+<audio id="player1" controls>
+<source src="Britney Spears - If U Seek Amy (Official HD Video) [0aEnnH6t8Ts].mp3" type="audio/mpeg">
+</audio>
+<br>
+<div class="musica">
+
+<div>
+<input type="radio" name="musica1" id="m1" value="womanizer">
+<label for="m1">Womanizer - Britney Spears</label>
+</div>
+
+<div>
+<input type="radio" name="musica1" id="m2" value="circus">
+<label for="m2">Circus - Britney Spears</label>
+</div>
+
+<div>
+<input type="radio" name="musica1" id="m3" value="ifuseekamy">
+<label for="m3">If U Seek Amy - Britney Spears</label>
+</div>
+
+</div>
+
+<button onclick="verificar1()">Enviar</button>
+
+<p id="mensagem1"></p>
+
+</div>
+
+<div class="quiz">
+
+<audio id="player2" controls>
+<source src="Taylor Swift - Gorgeous (Lyric Video) [EUoe7cf0HYw].mp3" type="audio/mpeg">
+</audio>
+<br>
+
+<div class="musica">
+
+<div>
+<input type="radio" name="musica2" id="m4" value="gorgeous">
+<label for="m4">Gorgeous - Taylor Swift</label>
+</div>
+
+<div>
+<input type="radio" name="musica2" id="m5" value="delicate">
+<label for="m5">Delicate - Taylor Swift</label>
+</div>
+
+<div>
+<input type="radio" name="musica2" id="m6" value="callitwhatyouwant">
+<label for="m6">Call It What You Want - Taylor Swift</label>
+</div>
+
+</div>
+
+<button onclick="verificar2()">Enviar</button>
+
+<p id="mensagem2"></p>
+
+</div>
+
+
+<div class="quiz">
+
+
+<audio id="player3" controls>
+<source src="TWICE _ONE SPARK_ M_V [jCzez_q8si0].mp3" type="audio/mpeg">
+</audio>
+
+<div class="musica">
+<br>
+<div>
+<input type="radio" name="musica3" id="m7" value="onespark">
+<label for="m7">ONE SPARK - TWICE</label>
+</div>
+
+<div>
+<input type="radio" name="musica3" id="m8" value="igotyou">
+<label for="m8">I GOT YOU - TWICE</label>
+</div>
+
+<div>
+<input type="radio" name="musica3" id="m9" value="rush">
+<label for="m9">RUSH - TWICE</label>
+</div>
+
+</div>
+
+<button onclick="verificar3()">Enviar</button>
+
+<p id="mensagem3"></p>
+
+</div>
+
+<div class="quiz">
+
+<audio id="player4" controls>
+<source src="Love song [5xx9gTEQaiQ].mp3" type="audio/mpeg">
+</audio>
+
+<div class="musica">
+<br>
+<div>
+<input type="radio" name="musica4" id="m10" value="california">
+<label for="m10">California - Lana Del Rey</label>
+</div>
+
+<div>
+<input type="radio" name="musica4" id="m11" value="mariners">
+<label for="m11">Mariners Apartment Complex - Lana Del Rey</label>
+</div>
+
+<div>
+<input type="radio" name="musica4" id="m12" value="lovesong">
+<label for="m12">Love song - Lana Del Rey</label>
+</div>
+
+</div>
+
+<button onclick="verificar4()">Enviar</button>
+
+<p id="mensagem4"></p>
+
+</div>
+
+<div class="quiz">
+
+<audio id="player5" controls>
+<source src="Hard Feelings_Loveless [TVpvzcz2VMU].mp3" type="audio/mpeg">
+</audio>
+
+<div class="musica">
+<br>
+<div>
+<input type="radio" name="musica5" id="m13" value="perfectplaces">
+<label for="m13">Perfect Places - Lorde</label>
+</div>
+
+<div>
+<input type="radio" name="musica5" id="m14" value="theloveclub">
+<label for="m14">The Love Club - Lorde</label>
+</div>
+
+<div>
+<input type="radio" name="musica5" id="m15" value="hardfeelings">
+<label for="m15">Hard Feelings/Loveless - Lorde</label>
+</div>
+
+</div>
+
+<button onclick="verificar5()">Enviar</button>
+
+<p id="mensagem5"></p>
+
+</div>
+
+
+<div class="quiz">
+
+<audio id="player6" controls>
+<source src="ROSALÍA - G3 N15 (Official Audio) [XlNtBPvPUTM].mp3" type="audio/mpeg">
+</audio>
+
+<div class="musica">
+<br>
+<div>
+<input type="radio" name="musica6" id="m16" value="bizcochito">
+<label for="m16">BIZCOCHITO - ROSALÍA</label>
+</div>
+
+<div>
+<input type="radio" name="musica6" id="m17" value="g3n15">
+<label for="m17">G3 N15 - ROSALÍA</label>
+</div>
+
+<div>
+<input type="radio" name="musica6" id="m18" value="motomami">
+<label for="m18">MOTOMAMI - ROSALÍA</label>
+</div>
+
+</div>
+
+<button onclick="verificar6()">Enviar</button>
+
+<p id="mensagem6"></p>
+
+</div>
+
+<div class="quiz">
+
+<audio id="player7" controls>
+<source src="Chappell Roan - Love Me Anyway (Official Lyric Video) [0SfI95-XIqU].mp3" type="audio/mpeg">
+</audio>
+
+<div class="musica">
+<br>
+<div>
+<input type="radio" name="musica7" id="m19" value="aftermidnight">
+<label for="m19">After Midnight - Chappell Roan</label>
+</div>
+
+<div>
+<input type="radio" name="musica7" id="m20" value="nakedinmanhattan">
+<label for="m20">Naked In Manhattan - Chappell Roan</label>
+</div>
+
+<div>
+<input type="radio" name="musica7" id="m21" value="lovemeanyway">
+<label for="m21">Love Me Anyway - Chappell Roan</label>
+</div>
+
+</div>
+
+<button onclick="verificar7()">Enviar</button>
+
+<p id="mensagem7"></p>
+
+</div>
+
+<div class="quiz">
+
+
+<audio id="player8" controls>
+<source src="Beyoncé - COZY (Official Lyric Video) [81j9gt1rXuk].mp3" type="audio/mpeg">
+</audio>
+
+<div class="musica">
+<br>
+<div>
+<input type="radio" name="musica8" id="m22" value="breakmysoul">
+<label for="m22">BREAK MY SOUL - Beyoncé</label>
+</div>
+
+<div>
+<input type="radio" name="musica8" id="m23" value="aliensuperstar">
+<label for="m23">ALIEN SUPERSTAR - Beyoncé</label>
+</div>
+
+<div>
+<input type="radio" name="musica8" id="m24" value="cozy">
+<label for="m24">COZY - Beyoncé</label>
+</div>
+
+</div>
+
+<button onclick="verificar8()">Enviar</button>
+
+<p id="mensagem8"></p>
+
+</div>
+
+<div class="quiz">
+
+<audio id="player9" controls>
+<source src="Ariana Grande - borderline (Official Audio) ft. Missy Elliott [F9-SYDu6ZI4].mp3" type="audio/mpeg">
+</audio>
+
+<div class="musica">
+<br>
+<div>
+<input type="radio" name="musica9" id="m28" value="rem">
+<label for="m28">Borderline ft. Missy Elliott - Ariana Grande</label>
+</div>
+
+<div>
+<input type="radio" name="musica9" id="m29" value="sweetener">
+<label for="m29">R.E.M - Ariana Grande</label>
+</div>
+
+<div>
+<input type="radio" name="musica9" id="m30" value="bordeline">
+<label for="m30">Sweetener - Ariana Grande</label>
+</div>
+
+</div>
+
+<button onclick="verificar9()">Enviar</button>
+
+<p id="mensagem9"></p>
+
+</div>
+
+<div class="quiz">
+
+<audio id="player10" controls>
+<source src="Chocolate [jSJUb9C58yM].mp3" type="audio/mpeg">
+</audio>
+
+<div class="musica">
+<br>
+<div>
+<input type="radio" name="musica10" id="m28" value="chocolate">
+<label for="m28">Chocolate - The 1975</label>
+</div>
+
+<div>
+<input type="radio" name="musica10" id="m29" value="robbers">
+<label for="m29">Robbers - The 1975</label>
+</div>
+
+<div>
+<input type="radio" name="musica10" id="m30" value="sex">
+<label for="m30">Sex - The 1975</label>
+</div>
+
+</div>
+
+<button onclick="verificar10()">Enviar</button>
+
+<p id="mensagem10"></p>
+
+</div>
+
+<script>
+
+function limitarAudio(audio, inicio, fim){
+
+audio.addEventListener("loadedmetadata", () => {
+audio.currentTime = inicio;
+});
+
+audio.addEventListener("timeupdate", () => {
+if(audio.currentTime >= fim){
+audio.pause();
+}
+});
+
+}
+
+limitarAudio(player1, 35, 40);
+limitarAudio(player2, 2, 7);
+limitarAudio(player3, 40, 45);
+limitarAudio(player4, 60, 65);
+limitarAudio(player5, 8, 13);
+limitarAudio(player6, 20, 25);
+limitarAudio(player7, 35, 40);
+limitarAudio(player8, 40, 45);
+limitarAudio(player9, 55, 60);
+limitarAudio(player10, 70, 75);
+
+function verificar(numero, respostaCorreta){
+
+let resposta =
+document.querySelector(`input[name="musica${numero}"]:checked`);
+
+let mensagem =
+document.getElementById(`mensagem${numero}`);
+
+if(!resposta){
+
+mensagem.innerHTML = "escolha uma opção!";
+mensagem.className = "melhore!";
+
+}
+
+else if(resposta.value !== respostaCorreta){
+
+mensagem.innerHTML = "melhore!";
+mensagem.className = "erro";
+
+}
+
+else{
+
+mensagem.innerHTML = "arraso! continue assim";
+mensagem.className = "acerto";
+
+}
+
+}
+
+function verificar1(){verificar(1,"ifuseekamy")}
+function verificar2(){verificar(2,"gorgeous")}
+function verificar3(){verificar(3,"onespark")}
+function verificar4(){verificar(4,"lovesong")}
+function verificar5(){verificar(5,"hardfeelings")}
+function verificar6(){verificar(6,"g3n15")}
+function verificar7(){verificar(7,"lovemeanyway")}
+function verificar8(){verificar(8,"cozy")}
+function verificar9(){verificar(9,"bordeline")}
+function verificar10(){verificar(10,"chocolate")}
+
+</script>
+
+</body>
+</html>
